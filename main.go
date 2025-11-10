@@ -9,7 +9,7 @@ import (
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	t := time.Now()
-	fmt.Fprintf(w, "Hello, it is %d:%d", t.Hour(), getRoundedMinute(t.Minute(), t.Second()))
+	fmt.Fprintf(w, "Hi there, it is %d:%d", t.Hour(), getRoundedMinute(t.Minute(), t.Second()))
 }
 
 func getRoundedMinute(minute int, second int) int {
